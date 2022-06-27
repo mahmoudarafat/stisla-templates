@@ -1,0 +1,23 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+
+ <div class="form-group col-sm-6 d-flex">
+    <div class="col-sm-4 col-md-6 pl-0 form-group">
+        {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+        <br>
+        <label
+                class="image__file-upload btn btn-primary text-white"
+                tabindex="2"> Choose
+                {!! Form::file('$FIELD_NAME$', ['class' => 'form-control d-none', 'id' => 'pfImage']) !!}
+
+        </label>
+    </div>
+    
+    <div class="col-sm-3 preview-image-video-container float-right mt-1">
+        <img id='edit_preview_photo'
+                class="img-thumbnail user-img user-profile-img profilePicture"
+                src="" />
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
